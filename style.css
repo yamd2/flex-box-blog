@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  /* font-size: 2rem; */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  background: orangered;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+/* global message section */
+.global-msg {
+  background: rgba(0, 17, 80, 0.959);
+  color: white;
+  line-height: 32px;
+}
+
+.gbl-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* top nav section */
+.nav-bar {
+  background: rgb(17, 54, 198);
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-left: 16px;
+}
+
+/* hero section */
+.hero {
+  background: url(img/hero.jpg) no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.776);
+  width: 450px;
+  color: whitesmoke;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* main section */
+.main {
+  display: flex;
+  margin-top: 32px;
+}
+
+.main-content {
+  margin-right: 1rem;
+  width: 66%;
+}
+
+.side-links {
+  width: 34%;
+}
+
+article {
+  display: flex;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.art-img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.try {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Aside section */
+.ready-by-country,
+.read-by-date {
+  margin-top: 3.5rem;
+  background: rgba(222, 250, 109, 0.755);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.read-by-date {
+  background: rgba(250, 217, 109, 0.755);
+}
+
+/* recc section */
+.recc {
+  background: rgb(228, 249, 158);
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+
+.card-list {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  /* width: 300px; */
+  margin: 10px 20px;
+  background: white;
+  border-radius: 5px;
+  padding-bottom: 1rem;
+  box-shadow: -5px 5px 15px 5px rgb(96, 95, 95);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+.btn-card {
+  width: 100%;
+}
+
+/* subscription section */
+.subs {
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+.footer {
+  background: #000;
+  color: wheat;
+  padding: 30px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+input {
+  padding: 8px;
+}
+.submit {
+  background-color: red;
+  font-weight: bolder;
+}
+/* 
+for css bottom override above  */
+/* media query */
+
+@media (max-width: 992px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* small screen button as a priority of overriding */
+@media (max-width: 600px) {
+  /* main section */
+  .main {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+  .main-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  article {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    flex-direction: column;
+  }
+  .art-img {
+    width: 300px;
+    margin-right: 0;
+  }
+  .side-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .side-links > div {
+    width: 40%;
+  }
+
+  /* recc section */
+  .card-list,
+  .card-list > div {
+    display: flex;
+    flex-direction: column;
+  }
+}
